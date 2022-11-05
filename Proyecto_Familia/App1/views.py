@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Template, Context
 from django.template import loader
-from App1.models import Madre, Padre, Hermana
+from App1.models import Informacion_de_todos
 
 def Datos(self):
 
@@ -28,10 +28,9 @@ def Datos(self):
 
 def infomadre(self):
     
-    informacion= Madre.objects.all()
-    fecha=Madre(fecha_de_nacimiento="23/03/1969")
-    lugar=Madre(lugar_de_nacimiento="Paraná, Entre Ríos")
-    nacio=Madre(nacionalidad="Argentina")
+    fecha=Informacion_de_todos(fecha_de_nacimiento="23/03/1969")
+    lugar=Informacion_de_todos(lugar_de_nacimiento="Paraná, Entre Ríos")
+    nacio=Informacion_de_todos(nacionalidad="Argentina")
     infomadre.save()
     documentoDeTexto=f"""Fecha de nacimiento: {infomadre.fecha_de_nacimiento}
     #Lugar de nacimiento: {infomadre.lugar_de_nacimiento}
