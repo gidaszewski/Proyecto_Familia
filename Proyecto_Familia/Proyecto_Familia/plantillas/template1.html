@@ -4,40 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Familia</title>
+        
 </head>
     <body>
         <h1 style='color: rgb(0, 4, 128)'>Mi familia</h1>
 
-        <img style="width: 200px;"
-            src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/293126382_10225820038721945_3309546069984511265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=deLg_NeWIqMAX9f1y3G&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfABSGLsYEp5iv-zJTex8pGrESRM_EyQb5e2kLOED0f7Fg&oe=6369A1F9"
-            alt=""
-        >
-        <p>Madre: {{Madre}} {{Apellidomadre}}</p>
-        <p>Para más info ingresá en /infomadre</p>
+            <img style="width: 200px;"
+                src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t39.30808-6/293126382_10225820038721945_3309546069984511265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=deLg_NeWIqMAX9f1y3G&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfABSGLsYEp5iv-zJTex8pGrESRM_EyQb5e2kLOED0f7Fg&oe=6369A1F9"
+                alt=""
+            >
+                <p>Madre: {{madre}}</p>
+                <p>Edad: {{i.edad}} Años</p>
+                <p>Fecha de nacimiento: {{i.fecha_de_nacimiento|date:"d-m-Y"}}</p>
 
-        <img style="width: 200px;"
-            src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t1.18169-9/16406408_238852229906432_2406802473336001969_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=ljFNBSI6IUoAX_YXtVi&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfAoc_P8Xhaelit-eNye1-G3zE1WijuCrr1Ut1f18GtWzw&oe=638B2D6D"
-            alt=""
-        >
-        <p>Padre: {{Padre}} {{Apellidopadre}}</p>
-        <p>Para más info ingresá en /infopadre</p>
+            <img style="width: 200px;"
+                src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t1.18169-9/16406408_238852229906432_2406802473336001969_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=ljFNBSI6IUoAX_YXtVi&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfAoc_P8Xhaelit-eNye1-G3zE1WijuCrr1Ut1f18GtWzw&oe=638B2D6D"
+                alt=""
+            >
+                <p>Padre: {{i.nombre}}</p>
+                <p>Edad: {{i.edad}} Años</p>
+                <p>Fecha de nacimiento: {{i.fecha_de_nacimiento|date:"d-m-Y"}}</p>
 
-        <img style="width: 200px;"
-            src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t1.18169-9/20992937_470420616664964_2508970078181767960_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=l4Pdp_hvpF0AX9wD7Dt&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfAwi5Y9CLytgLRnBiZkUntHPz0U5tOgTwqe7r21P2r6bg&oe=638B2F4F"
-            alt=""
-        >
-        <p>Hermana: {{Hermana}} {{Apellidohermana}}</p>
-        <p>Para más info ingresá en /infohermana</p>
-
-
-
-
-
+            <img style="width: 200px;"
+                src="https://scontent.fsfn7-1.fna.fbcdn.net/v/t1.18169-9/20992937_470420616664964_2508970078181767960_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=l4Pdp_hvpF0AX9wD7Dt&_nc_ht=scontent.fsfn7-1.fna&oh=00_AfAwi5Y9CLytgLRnBiZkUntHPz0U5tOgTwqe7r21P2r6bg&oe=638B2F4F"
+                alt=""
+            >
+                <p>Hermana: {{i.nombre}}</p>
+                <p>Edad: {{i.edad}} Años</p>
+                <p>Fecha de nacimiento: {{i.fecha_de_nacimiento|date:"d-m-Y"}}</p>
 
 
-        <script>
-            alert("Hola! Bievenid@ a mi web");
+
+    <script>
+        alert("Hola! Bievenid@ a mi web");
     </script>   
     </body>
 </html>
